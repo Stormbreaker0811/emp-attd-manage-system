@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="../login.css">
+</head>
+<body>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <div class="form-container">
+        <dotlottie-player src="https://lottie.host/7d21029f-ff75-4081-8587-9e1689221dfb/2zrTH9RT4U.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <div class="form">
+            <h1>Login</h1>
+            <form action="../backend/db.php" method="post">
+                <i class="fa-solid fa-user"></i><input type="text" name="emp_id" id="emp_id" placeholder="Enter Employee ID: " />
+                <br /><i class="fa-solid fa-lock"></i><input type="password" name="emp_pass" id="emp_pass" name="emp-pass" placeholder="Enter Password:" />
+                <br /><button class="login-btn" >Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c6849c8f5a.js" crossorigin="anonymous"></script>
+    <script src="../backend/db.js"></script>
+</body>
+</html>
